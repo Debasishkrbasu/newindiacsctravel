@@ -287,3 +287,28 @@ footer {
    left: 350px;
     
   }
+/* Base styles for larger screens */
+body {
+    font-size: 16px;
+    margin: 20px;
+}
+
+/* Media query for devices with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        margin: 10px;
+    }
+    /* Additional styles for mobile devices */
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .navigation {
+        display: none; /* Hide navigation menu */
+    }
+    .mobile-navigation {
+        display: block; /* Show mobile-friendly navigation */
+    }
+}
+
