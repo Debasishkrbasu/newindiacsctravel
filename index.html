@@ -1,173 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>New India Csc</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            padding: 10px;
-            display: flex;
-            justify-content: space-around;
-        }
-        .topnav a {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-            display: inline-block;
-            transition: background 0.3s;
-        }
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .section {
-            min-height: 100vh;
-            padding: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-        }
-        #home { background: lightblue; }
-        #service { background: lightcoral; }
-        #certification { background: lightgreen; }
-        #contact { background: lightpink; }
-        #about { background: lightgoldenrodyellow; }
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        .image-container img {
-            width: 30%;
-            max-height: 250px;
-            border-radius: 5px;
-            object-fit: cover;
-        }
-        .certificate-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        .certificate-gallery img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 5px;
-            transition: transform 0.3s;
-        }
-        .certificate-gallery img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #222;
-            color: white;
-        }
-        
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>New India Trvels & Csc</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="topnav">
-        <a href="#home">Home</a>
-        <a href="#service">Service</a>
-        <a href="#certification">Certification</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div>
-    
-    <div id="home" class="section">
-        <h1>Welcome to New India Travels & CSC Khilpara</h1>
-        <h3>Your trusted partner for seamless travel and digital services.</h3>
-        <h3>Explore our wide range of travel solutions and CSC (Common Service Center) facilities to make your journey easier and your services hassle-free.</h3>
-    
-        <div class="image-container">
-            <img src="homephoto1.jpg" alt="Image 1">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg" alt="Ujjayanta Palace">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/6e/7a/bc/tripura-sundari-temple.jpg?w=500&h=400&s=1" alt="Tripura Sundari Temple">
-            <img src="https://www.tourmyindia.com/states/tripura/images/pilgrimage.jpg" alt="Pilgrimage Site">
-            <img src="https://res.cloudinary.com/chasset/hbimages/desktop/1519799875711-Fourteen-Goddess-Temple.jpg" alt="Fourteen Goddess Temple">
-            <img src="https://media2.thrillophilia.com/images/photos/000/380/983/original/1647499204_shutterstock_1246600720_(1).jpg?w=753&h=450&dpr=1.5" alt="Tripura Natural Beauty">
-            <img src="https://www.nativeplanet.com/img/2018/02/xcover-1518591685.jpg.pagespeed.ic.6XmcKT8y7X.jpg" alt="Tripura Landscape">
-            <img src="https://www.tourmyindia.com/states/tripura/images/neermahal-tripura1.jpg" alt="Neermahal Palace">
+       <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="service.html">Service</a>
+    <a href="certificat.html">Certificat</a>
+    <a href="contuc.html">Contact</a> <!-- Corrected from contuc.html -->
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div> <!-- Closing div should be here -->
+
+
+<div style="padding-left:16px">
+    <div class="image-container">
+        <img src="homephoto1.jpg" alt="Image 1" class="fade-img active">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg/1200px-Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg" alt="img2" class="fade-img active">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/6e/7a/bc/tripura-sundari-temple.jpg?w=500&h=400&s=1" alt="img3" class="fade-img active">
+        <img src="https://assets.telegraphindia.com/telegraph/3d386800-1b9e-4dda-811c-d48f2085ab05.jpg" alt="img3" class="fade-img active"> 
+        <img src="https://www.tourmyindia.com/states/tripura/images/pilgrimage.jpg" alt="Image 1" class="fade-img active">
+        <img src="https://res.cloudinary.com/chasset/hbimages/desktop/1519799875711-Fourteen-Goddess-Temple.jpg" alt="Image 1" class="fade-img active">
+        <img src="https://media2.thrillophilia.com/images/photos/000/380/983/original/1647499204_shutterstock_1246600720_(1).jpg?w=753&h=450&dpr=1.5" alt="Image 1" class="fade-img active">
+       </div> 
+       <!-- <img  class="img"  src="mypicture.jpg"> -->
+       <!-- <div class="video-logo">
+        <video autoplay loop muted>
+            <source src="homevideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div> -->
+    <div class="footer-column"> 
+                <h1>NEW INDIA TRAVELS & CSC KHILPARA </h1>
+                <p><b>Dr. Bibhas Chandra Basu is a self-employed entrepreneur and the owner-operator of CSC Star VLE. He is also the founder of New India Travels, a travel agency based in Tripura. Dr. Basu has a rich educational background, having studied at Maharaja Bir Bikram Evening College, where he graduated in 1987. He completed his high school education at Kirit Bikram Institution in Udaipur, South Tripura. Dr. Basu is deeply rooted in his hometown of Udaipur, Tripura, where he continues to live and contribute to the local business community</b></p>
+
+            </div>
         </div>
-    </div>
-    <div id="service" class="section">
-        <h1>OUR SERVIVES</h1> 
-        <div class="certificate-gallery">
-            <img src="ser1.jpg" alt="Certificate 1">
-            <img src="ser11.jpg" alt="Certificate 2">
-            <img src="ser999.jpg" alt="Certificate 3">
-            <img src="service1.jpg" alt="Certificate 4">
-            <img src="service2.jpg" alt="Certificate 5">
-            <img src="service3.jpg" alt="Certificate 6">
-            <img src="services4.jpg" alt="Certificate 7">
-            <img src="certi10.jpg" alt="Certificate 8">
+        <div class="boxer">
+            <h3 class="moving-text">Bibhas Chandra basu : khilpara Udaipur Gomati Tripura : Email Address bibhas.basumandir@gmail.com : Mobil No 8257962008 , 9862455719</h3>
+
         </div>
-    </div>
-    </div>
-    <div id="certification" class="section">
-        <h1>OUR ACHIVEMENT & CERTIFICAT</h1>
-        <div class="certificate-gallery">
-            <img src="certificate2.jpg" alt="Certificate 1">
-            <img src="certi3.jpg" alt="Certificate 2">
-            <img src="certi4.jpg" alt="Certificate 3">
-            <img src="certi5.jpg" alt="Certificate 4">
-            <img src="certi6.png" alt="Certificate 5">
-            <img src="certi8.jpg" alt="Certificate 6">
-            <img src="certi9.jpg" alt="Certificate 7">
-            <img src="certi10.jpg" alt="Certificate 8">
-        </div>
-    </div>
-    <div id="contact" class="section">
-        <h1>CONTUCT US</h1>
-        <div>
-            <script src="https://sheetdb.io/s/f/8n4o295us4nwc.js"></script>
-                 </div>
-    </div>
-    <div id="about" class="section">
-        <h1>About Us</h1>
-        <h1></h1> 
-        <div class="certificate-gallery">
-            <img src="about1.jpg" alt="Certificate 1">
-            <img src="about88.jpg" alt="Certificate 1">
-            <img src="about12.jpg" alt="Certificate 2">
-            <img src="about14.jpg" alt="Certificate 3">
-            <img src="about15.jpg" alt="Certificate 4">
-            <img src="abouts30 (12).jpg" alt="Certificate 5">
-            <img src="abouts30 (10).jpg" alt="Certificate 6">
-            <img src="abouts30 (12).jpg" alt="Certificate 7">
-            <img src="abouts30 (8).jpg" alt="Certificate 8">
-            <img src="abouts30 (9).jpg" alt="Certificate 4">
-            <img src="about17.jpg" alt="Certificate 5">
-            <img src="abouts30 (7).jpg" alt="Certificate 6">
-            <img src="abouts30 (6).jpg" alt="Certificate 7">
-            
-        </div>
-        <p><b>Dr. Bibhas Chandra Basu is a self-employed entrepreneur and the owner-operator of CSC Star VLE. He is also the founder of New India Travels, a travel agency based in Tripura...</b></p>
-    </div>
-    
-    <footer>
-        <h3>Bibhas Chandra Basu: Khilpara Udaipur Gomati Tripura | Email: bibhas.basumandir@gmail.com | Mobile No: 8257962008, 9862455719</h3>
-        <p>&copy; 2025 New India Tour and Travels</p>
     </footer>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
